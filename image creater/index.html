@@ -1,0 +1,44 @@
+<!DOCTYPE html>           <!--    document type declaration is an instruction that tells the web browser about the markup language -->
+<html lang="en">          <!--    the root element of an HTML document. This tag tells the browser that it is an HTML document. -->
+<head>                      <!--  It contains information related to the document.Elements within the head tag are not visible on the webpage.    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>                         <!--content is what the browser will show on the front end. -->
+    
+<h1>Image Search App</h1> 
+<form action="">
+    <input type="text" id="search-input" placeholder="Search for images">   <!--where the user can enter data.-->
+    <button id="search-button">Search</button>  <!--id to uniquely identify an element. -->
+</form>     <!--h1 for size of font-->
+
+<div class="search-results">  <!--to point to a class in a style sheet.-->
+    <div class="search-result">
+        <img src="https://images.unsplash.com/photo-1504415724575-56cef5e3da72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Road ">
+                <a href="https://unsplash.com/photos/gray-roadway-between-green-leaf-trees-Lc2EIgwh1RA"
+                target="_blank">Road</a>
+    </div>
+
+    <div class="search-result">
+    <img src="https://images.unsplash.com/photo-1504415724575-56cef5e3da72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Road ">
+                <a href="https://unsplash.com/photos/gray-roadway-between-green-leaf-trees-Lc2EIgwh1RA"
+                target="_blank">Road</a>
+    </div>
+
+    <div class="search-result">
+        <img src="https://images.unsplash.com/photo-1504415724575-56cef5e3da72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Road ">
+                <a href="https://unsplash.com/photos/gray-roadway-between-green-leaf-trees-Lc2EIgwh1RA"
+                target="_blank">Road</a>
+    </div>
+</div>
+
+<button id="show-more-button">Show More</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

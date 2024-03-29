@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{/*universal selector*/
+    margin: 0;  /*create space around elements, outside of any defined borders.*/
+    padding: 0;  /*to create space around an element's content, inside of any defined borders.*/
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+body{
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#search-input{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2 ease-in-out;
+}
+
+.search-result:hover img {
+    opacity: 0.8;
+}
+
+.search-result a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .search-results{
+        padding: 25px;
+    }
+    .search-result {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-result {
+        width: 100%;
+    }
+}
